@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@drawable/linear_background"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/itemHeight"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/phone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/btn_margin_bottm"
+        android:text="1111"/>
+
+        <TextView
+            android:id="@+id/tv_pair_usable"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/btn_margin_bottm"
+            android:textSize="12sp"
+            android:text="@string/pairText"/>
+
+
+
+    </LinearLayout>
+
+<!--
+    <include layout="@layout/line"/>
+-->
+
+
+
+</LinearLayout>

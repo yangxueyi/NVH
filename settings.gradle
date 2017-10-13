@@ -1,0 +1,2 @@
+include ':app'
+include ':hC_BLE_one'

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">NVH</string>
+    <string name="title">NVH分析系统</string>
+    <string name="start">开始</string>
+    <string name="stop">结束</string>
+    <string name="manage">管理</string>
+    <string name="delete">删除</string>
+    <string name="derive">导出</string>
+    <string name="uploading">上传</string>
+    <string name="syn">同步</string>
+    <string name="setting">设置:</string>
+    <string name="frequency">采样频率</string>
+    <string name="bluetooth">蓝牙</string>
+    <string name="open_bluetooth">开启蓝牙</string>
+    <string name="datas">采样数据</string>
+    <string name="microphone">麦克风</string>
+    <string name="WiFi">无线局域网</string>
+    <string name="pair">已配对设备</string>
+    <string name="usable">可用设备</string>
+    <string name="pairText">正在配对...</string>
+</resources>

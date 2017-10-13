@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_margin" >10dp</dimen>
+    <dimen name="btn_margin_bottm" >20dp</dimen>
+    <dimen name="padding" >5dp</dimen>
+    <dimen name="blue_padding" >15dp</dimen>
+    <dimen name="recycleviewHeight" >200dp</dimen>
+    <dimen name="itemHeight" >50dp</dimen>
+    <dimen name="timerTextSize" >20sp</dimen>
+
+
+
+
+</resources>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.zhang.nvh.MainActivity">
+
+    <include layout="@layout/include_title"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/setting"
+        android:textSize="18sp"
+        android:layout_marginLeft="@dimen/btn_margin_bottm"
+        android:layout_marginTop="@dimen/btn_margin"
+        android:layout_marginBottom="@dimen/btn_margin"/>
+
+    <include layout="@layout/line"/>
+
+    <ScrollView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/btn_margin"
+        android:fillViewport="true"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lin_layout_bluetooth"
+               style="@style/LinearLayout_setting">
+                <TextView
+                    style="@style/TextView_setting_1"
+                    android:text="@string/bluetooth"
+                    android:drawableLeft="@mipmap/setting_bluetooth"/>
+
+                <TextView
+                    android:id="@+id/tv_blue"
+                    style="@style/TextView_setting_2"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/arrows_right"
+                    android:layout_marginRight="@dimen/btn_margin_bottm"/>
+            </LinearLayout>
+            <include layout="@layout/line"/>
+            <LinearLayout
+                android:id="@+id/lin_layout_frequency"
+                style="@style/LinearLayout_setting">
+                <TextView
+                   style="@style/TextView_setting_1"
+                    android:text="@string/frequency"
+                    android:drawableLeft="@mipmap/setting_frequency"
+                    />
+                <TextView
+                    android:id="@+id/tv_frequency"
+                    style="@style/TextView_setting_2"
+                    android:text="15.2Hz"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/arrows_right"
+                    android:layout_marginRight="@dimen/btn_margin_bottm"/>
+            </LinearLayout>
+            <include layout="@layout/line"/>
+            <LinearLayout
+                android:id="@+id/lin_layout_datas"
+                style="@style/LinearLayout_setting">
+                <TextView
+                    style="@style/TextView_setting_1"
+                    android:text="@string/datas"
+                    android:drawableLeft="@mipmap/setting_datas"/>
+                <TextView
+                    android:id="@+id/tv_data"
+                    style="@style/TextView_setting_2"
+                    android:text="data"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/arrows_right"
+                    android:layout_marginRight="@dimen/btn_margin_bottm"/>
+            </LinearLayout>
+            <include layout="@layout/line"/>
+            <LinearLayout
+                android:id="@+id/lin_layout_microphone"
+                style="@style/LinearLayout_setting">
+                <TextView
+                    style="@style/TextView_setting_1"
+                    android:text="@string/microphone"
+                    android:drawableLeft="@mipmap/setting_microphone"/>
+                <TextView
+                    android:id="@+id/tv_mic"
+                    style="@style/TextView_setting_2"
+                    android:text="mic"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/arrows_right"
+                    android:layout_marginRight="@dimen/btn_margin_bottm"/>
+            </LinearLayout>
+            <include layout="@layout/line"/>
+            <LinearLayout
+                android:id="@+id/lin_layout_wifi"
+                style="@style/LinearLayout_setting">
+                <TextView
+                    style="@style/TextView_setting_1"
+                    android:text="@string/WiFi"
+                    android:drawableLeft="@mipmap/setting_wifi"/>
+                <TextView
+                    android:id="@+id/tv_wifi"
+                    style="@style/TextView_setting_2"
+                    android:text="wifi"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/arrows_right"
+                    android:layout_marginRight="@dimen/btn_margin_bottm"/>
+            </LinearLayout>
+            <include layout="@layout/line"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/btn_margin_bottm"
+        android:gravity="center"
+     >
+        <Button
+            android:id="@+id/btn_start"
+            style="@style/Btn_setting"
+            android:text="@string/start"
+            />
+        <Button
+            android:id="@+id/btn_stop"
+            android:text="@string/stop"
+            style="@style/Btn_setting"
+            />
+        <Button
+            android:id="@+id/btn_manage"
+            android:text="@string/manage"
+            style="@style/Btn_setting"
+            android:layout_marginRight="@dimen/btn_margin"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/btn_margin_bottm"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="@dimen/btn_margin_bottm"
+        android:orientation="horizontal">
+
+        <Chronometer
+        android:id="@+id/timer"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:format="00:00:00"
+        android:textColor="@color/green"
+        android:textSize="@dimen/timerTextSize"
+        android:gravity="center"
+        android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/btn_syn"
+            android:text="@string/syn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/btn_margin"
+            android:layout_marginRight="@dimen/btn_margin"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
